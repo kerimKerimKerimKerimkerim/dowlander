@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Header from '@components/Header'
 import Footer from '@components/Footer'
-import styles from './index.module.css' // CSS'i bu şekilde ayıracağız
+import styles from './index.module.css'
 
 export default function Home() {
   return (
@@ -12,12 +11,6 @@ export default function Home() {
       </Head>
 
       <main style={{ textAlign: 'center', padding: '4rem 1rem' }}>
-        <Header title="Dowlander" />
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
         <div className={styles.downloadSection}>
           <h2 className={styles.downloadText}>Download</h2>
 
