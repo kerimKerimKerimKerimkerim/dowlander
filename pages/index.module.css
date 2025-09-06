@@ -1,0 +1,56 @@
+.downloadSection {
+  margin-top: 4rem;
+}
+
+.downloadText {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.downloadButton {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: bounceIn 1s ease;
+  box-shadow: 0 10px 25px rgba(0, 242, 254, 0.4);
+}
+
+.downloadButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(0, 242, 254, 0.6);
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
